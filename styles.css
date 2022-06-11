@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+:root{
+    --shadow-color:rgba(197, 197, 197, 0.48);
+}
+
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    color:rgb(78, 78, 78);
+    background-color:#e1f8ff;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    padding: 50px;
+    gap:30px;
+    background-color:#e1f8ff;
+}
+
+.nav{
+    height: 100px;
+    background-color: rgb(85, 207, 255);
+    box-shadow: -2px -4px 8px 7px --shadow-color;
+    -webkit-box-shadow: -2px -4px 8px 7px --shadow-color;
+    -moz-box-shadow: -2px -4px 8px 7px --shadow-color;
+    display: flex;
+    align-items: center;
+    gap:100px;  
+    padding-left: 50px;  
+}
+input[type='text'],input[type='number']{
+    padding: 10px 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    border:none;
+}
+
+.button{
+    font-size: 30px;    
+    font-weight: 300;
+    padding: 10px 20px;
+    background-color: white;
+    color:rgb(80, 80, 80);
+    border-radius: 5px;
+    border:2px solid rgb(80, 80, 80);
+}
+
+.card{
+    background-color:white;
+    border-radius: 8px;
+    box-shadow: 3px 3px 9px -2px var(--shadow-color);
+    -webkit-box-shadow: 3px 3px 9px -2px var(--shadow-color);
+    -moz-box-shadow: 3px 3px 9px -2px var(--shadow-color);
+    overflow: hidden;
+}
+
+h1{
+    font-size: 25px;
+    margin: 0;
+    padding: 20px 20px;
+    font-weight: 300;
+    margin: 0;
+    color:rgb(85, 207, 255);
+}
+
+h2{
+    font-size: 25px;
+    padding:20px 20px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+}
+
+.svg{
+    width: 100%;
+    padding:20px 0;
+    text-align: center;
+    color:rgb(255, 100, 100);
+    font-size: 25px;
+}
+
+.toggle-read{
+    margin: 10px;
+    font-size: 25px;
+    text-align: center;
+    padding:20px 0;
+    background-color: rgb(85, 207, 255);
+    color: white;
+    border-radius: 10px;
+    border:2px solid rgb(85, 207, 255);
+}
+
+.toggle-not-read{
+    margin: 10px;
+    font-size: 25px;
+    text-align: center;
+    padding:20px 0;
+    background-color: white;
+    color: rgb(85, 207, 255);
+    border-radius: 10px;
+    border:2px solid rgb(85, 207, 255);
+}
