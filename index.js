@@ -20,25 +20,27 @@ let authorInput;
 
 let pagesInput;
 
-function Book(title,author,pages){
+class Book{
+    constructor(title,author,pages){
     this.title = title;
     this.author = author;
     this.pages = pages;
     this.read = true;
-}
+    }
 
-
-Book.prototype.toggleRead = function(){
-    if(this.read){
-
-        this.read = false;
-
-    } else{
-
-        this.read = true;
-        
+    toggleRead = function(){
+        if(this.read){
+    
+            this.read = false;
+    
+        } else{
+    
+            this.read = true;
+            
+        }
     }
 }
+
 
 function addBookToLibrary(){
     bookTitle = document.querySelector('#book-title').value;
